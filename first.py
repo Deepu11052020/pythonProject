@@ -5,7 +5,7 @@ from pyspark.sql.types import *
 import os
 import sys
 
-if _name_ == '__main__':
+if __name__ == '__main__':
     os.environ['PYSPARK_PYTHON'] = sys.executable
     spark = SparkSession.builder.master("local").appName("p2").getOrCreate()
 
