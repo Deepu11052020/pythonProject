@@ -1,7 +1,11 @@
 #def print_hi(name):
 #    print(name)
+from pyspark.sql import SparkSession
+from pyspark.sql.types import *
+import os
+import sys
 
-if name == '__main__':
+if _name_ == '__main__':
     os.environ['PYSPARK_PYTHON'] = sys.executable
     spark = SparkSession.builder.master("local").appName("p2").getOrCreate()
 
